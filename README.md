@@ -1,2 +1,1 @@
-Week 1 Promineo Class HTML document.
-
+These are the Week2 Web page Assignments

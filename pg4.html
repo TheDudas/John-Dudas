@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- website declaration of HTML Page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>Form</title>
+</head> 
+<!-- Navigation Bar to navigate each Webpage-->
+<nav>    
+    <ul class="dropdown"> 
+        <button class="dropbtn">Navigation</button>
+        <div class="dropdown-content">  
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pg2.html">Tables</a></li>
+            <li><a href="pg3.html">Photos</a></li>
+            <li><a href="pg4.html">Form</a></li>
+        </div>
+    </ul>
+</nav>
+
+<!-- Body contains all the details and main portion of the page-->
+<body>
+
+    <!-- build a form here -->
+     <!-- Form will collect visitor's information to gather for Email newsletter -->
+
+     <!-- Checkboxes, labels, or Radio buttons-->
+<h4>Enter your Contact Information to sign up for my Fake Newsletter.</h4>
+
+
+<fieldset> <!-- created fields set to accent Form entries-->
+    <form id="form" action="/Form/Form_capture.txt" method="post" > <!-- I have nowhere to post this for to so this will not work. The URL would go here-->
+
+        <p>
+            <label for="name">Name:</label> <!-- get name -->
+            <input type="text" id="name" name="user_name" placeholder="Full Name"/>
+        </p>
+        <p>
+            <label for="email">Email:</label> <!-- get email -->
+            <input type="email" id="email" name="user_email" placeholder="email address"/>
+        </p>
+        <p>
+            <label for="phone" >Phone Number:</label> <!-- get phone number-->
+            <input type="tel" id="phone" name="user-phone" placeholder="your phone number"/>
+        </p>
+        <fieldset>
+            <legend>Select Your Region of the Country</legend> <!-- determine where person is from-->
+                <div>
+                    <input type="radio" id="east" name="Region" value="east" checked /> <!-- radio buttoms to select their area of the country-->
+                    <label for="region">East</label> <!-- label radio button-->
+                </div>
+                <div>
+                    <input type="radio" id="central" name="Region" value="central" checked/> <!-- radio buttoms to select their area of the country-->
+                    <label for="region">Central</label> <!-- label radio button-->
+                </div>
+                    <input type="radio" id="south" name="Region" value="south" checked/> <!-- radio buttoms to select their area of the country-->
+                    <label for="region">South</label> <!-- label radio button-->
+                <div>
+                    <input type="radio" id="west" name="Region" value="west" checked/> <!-- radio buttoms to select their area of the country-->
+                    <label for="region">West</label> <!-- label radio button-->
+                </div>
+        </p> 
+        </fieldset>
+        <button type="submit">Submit</button> <!-- submits form-->
+
+</form>
+<p id="log"></p> <!--creates log for the page-->
+
+</fieldset>
+</body>
+
+
+<footer class="page-footer"> <!-- bottom of the page Footers for consistent navigation -->
+   
+    <h4>WebLinks</h4>
+
+    <a href="https://www.google.com" target="_blank">Google</a> <!-- Google to search-->
+    <a href="https://promineotech.com/" target="_blank">Promineotech.com</a> <!-- Promideo to work on assignments-->
+    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDM Developer Resources</a>  <!-- Coding Help-->
+    <a href="https://github.com/TheDudas/Week1.git" target="_blank">John Dudas GitHub</a> <!-- My GitHub Repository-->
+</footer>
+
+</html> <!-- end of HTML Page -->
